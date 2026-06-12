@@ -1,0 +1,17 @@
+# Dependency directories
+node_modules/
+
+# Build outputs
+dist/
+
+# Clasp local configuration
+.clasp.json
+
+# OS files
+.DS_Store
+Thumbs.db
+*.local
+
+# Project local configuration
+src/config.ts
+

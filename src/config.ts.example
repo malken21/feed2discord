@@ -1,0 +1,32 @@
+interface FeedConfig {
+    id: string;
+    url: string;
+    webhookUrl: string;
+}
+
+const FEEDS: FeedConfig[] = [
+    {
+        id: "rss1",
+        url: "https://example.com/rss1.xml",
+        webhookUrl: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_1"
+    },
+    {
+        id: "rss2",
+        url: "https://example.com/rss2.xml",
+        webhookUrl: "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_2"
+    }
+];
+
+const MAX_RETRIES: number = 5; // 最大再試行回数
+const RETRY_DELAY_MS: number = 3000; // 再送までの遅延時間 (ミリ秒)
+
+interface DiscordPayload {
+    content: string;
+}
+
+// Discordに送信される payload
+const payload = (text: string): DiscordPayload => {
+    return {
+        "content": `${text}`
+    };
+};

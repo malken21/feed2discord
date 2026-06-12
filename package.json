@@ -1,0 +1,13 @@
+{
+  "name": "feed2discord",
+  "version": "1.0.0",
+  "description": "RSS feed to Discord via Google Apps Script",
+  "scripts": {
+    "build": "tsc",
+    "push": "tsc && clasp push"
+  },
+  "devDependencies": {
+    "@types/google-apps-script": "^1.0.83",
+    "typescript": "^5.4.5"
+  }
+}
