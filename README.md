@@ -17,7 +17,6 @@ RSSおよびAtomフィードの新着情報を取得し、Discord Webhookを使�
 
 - Node.js (v18以降推奨)
 - npm
-- clasp (Google Apps Script CLI)
 
 ## セットアップ手順
 
