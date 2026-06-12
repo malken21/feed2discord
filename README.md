@@ -6,11 +6,11 @@ RSSおよびAtomフィードの新着情報を取得し、Discord Webhookを使�
 
 | パス | 説明 |
 | :--- | :--- |
-| [src/code.ts](./src/code.ts) | エントリーポイント（`main` 関数）およびフィード処理ループ |
+| [src/main.ts](./src/main.ts) | エントリーポイント（`main` 関数）およびフィード処理ループ |
 | [src/config.ts](./src/config.ts) | フィード配信元・転送先Webhook等の各種設定 |
-| [src/history.ts](./src/history.ts) | スクリプトプロパティを用いた既読履歴の管理（重複送信防止） |
-| [src/parser.ts](./src/parser.ts) | RSS / AtomフィードのXML解析処理 |
-| [src/util.ts](./src/util.ts) | DiscordへのWebhook送信処理（再試行・待機処理を含む） |
+| [src/feedHistory.ts](./src/feedHistory.ts) | スクリプトプロパティを用いた既読履歴の管理（重複送信防止） |
+| [src/feedParser.ts](./src/feedParser.ts) | RSS / AtomフィードのXML解析処理 |
+| [src/discord.ts](./src/discord.ts) | DiscordへのWebhook送信処理（再試行・待機処理を含む） |
 | `dist/` | コンパイル後のJavaScript出力ディレクトリ（GASデプロイ対象） |
 
 ## 前提条件
